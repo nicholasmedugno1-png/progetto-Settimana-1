@@ -86,6 +86,7 @@ aside{
 }
     
 .topBar ul li:hover {
+    border:  hsl(45, 90%, 60%);
     background-color:  hsl(45, 90%, 60%);
 }
 .topBar ul li:nth-child(1)::before{
@@ -275,7 +276,7 @@ h2::before{
     border-left: 3px solid hsl(45, 90%, 50%);
 }
 
-.progect h3:first-of-type::after {
+.progectRicetta::after {
     content: '🆕';
 }
 
@@ -289,15 +290,18 @@ h2::before{
     text-decoration: underline 2px hsl(45, 90%, 50%);
 }
 
-.gitHubLink::before {
+/* .gitHubLink::before {
     content: '🐈‍⬛' ;
     text-decoration: none ;
-}
+} */
 
 .progectHome {
     text-decoration: none;
     color: hsl(220, 60%, 30%);
     text-decoration: underline 2px hsl(45, 90%, 50%);
+    display: table;
+    margin-left: auto;
+    margin-top: 5px;
 }
 
 .progectHome:hover {
@@ -331,7 +335,8 @@ label {
     font-family: Helvetica,Arial,sans-serif;
     display: block;
     margin-bottom: 15px;
-    border: 1px solid #d6cfbf
+    border: 1px solid #d6cfbf;
+    border-radius: 4px;
 }
 
 
@@ -402,6 +407,10 @@ footer a i{
     margin: 10px;
     color:  white;
     
+}
+
+footer p {
+    font-size: 0.7em;
 }
 
 .esperienze:nth-of-type(table) {
