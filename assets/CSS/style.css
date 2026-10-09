@@ -77,32 +77,18 @@ aside{
 }
 
 .topBar ul li {
-    color: #e9ebee;
+     color: #e9ebee; 
     display: inline-block;
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 2px 1px;
     border-radius: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 }
     
 .topBar ul li:hover {
     border:  hsl(45, 90%, 60%);
     background-color:  hsl(45, 90%, 60%);
-}
-.topBar ul li:nth-child(1)::before{
-    content: '👤';
-}
-.topBar ul li:nth-child(2)::before{
-    content: '🧩';
-}
-.topBar ul li:nth-child(3)::before{
-    content: '💼';
-}
-.topBar ul li:nth-child(4)::before{
-    content: '📁';
-}
-.topBar ul li:nth-child(5)::before{
-    content: '✉️';
+
 }
 
 /* .barEsterna{
@@ -170,13 +156,13 @@ aside{
 }
 
 .topBar ul li a {
-    color: hsl(45, 90%, 60%);
+    color: #e9ebee;
     font-weight: bold;
     text-decoration: none;
 }
 
 .topBar ul li a:hover {
-    color: #ffffff;
+    color: #2b2b2b;
     font-style: bold;
     border: 1px solid hsl(45, 90%, 60%);;
     
