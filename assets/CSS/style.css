@@ -20,17 +20,20 @@ body {
     padding: 60px 20px 60px 20xp;
 }
 
-main, aside {
+main {
     max-width: 920px;
     margin: 0 auto;
     margin-top: -35px;
     position: relative;
 }
+aside{
+    max-width: 920px;
+    margin: 0 auto;
+}
 
 
     
 
-    
 
 .topBar {
     height: 230px;
@@ -112,40 +115,49 @@ main, aside {
 .barHTML {
     text-align: end;
     display: inline-block;
-    margin-left: 238px;
+    margin-left: 30px;
     width: 200px; 
     height: 8px; 
     background-color: hsl(45, 90%, 50%); 
-    margin-top: 5px; 
+    margin-bottom: 15px; 
     border-radius: 2px;
 }
 
 .barCSS {
     text-align: end;
     display: inline-block;
-    margin-left: 250px;
+    margin-left: 30px;
     width: 170px; 
     height: 8px; 
     background-color: hsl(45, 90%, 50%); 
-    margin-top: 5px; 
+    margin-bottom: 15px; 
     border-radius: 2px;
 }
 .barGIT {
     display: inline-block;
-    margin-left: 157px;
+    margin-left: 30px;
     width: 250px; 
     height: 8px; 
     background-color: hsl(45, 90%, 50%); 
-    margin-top: 5px; 
+    margin-bottom: 15px; 
     border-radius: 2px;
 }
 .barVS {
     display: inline-block;
-    margin-left: 181px;
+    margin-left: 30px;
     width: 206px; 
     height: 8px; 
     background-color: hsl(45, 90%, 50%); 
-    margin-top: 5px; 
+    margin-bottom: 15px; 
+    border-radius: 2px;
+}
+.barDOC {
+    display: inline-block;
+    margin-left: 30px;
+    width: 206px; 
+    height: 8px; 
+    background-color: hsl(45, 90%, 50%); 
+    margin-bottom: 15px; 
     border-radius: 2px;
 }
 
@@ -194,9 +206,15 @@ main, aside {
 
 }
 
-.noFloat {
-    clear: both;
+h1::first-letter,
+h2::first-letter,
+h3::first-letter {
+    font-family:'Playfair Display', Georgia, serif;
 }
+
+/* .noFloat {
+    clear: both;
+} */
 
 .titleCompetenze {
     color: hsl(220, 30%, 25%);
@@ -243,17 +261,42 @@ h2::before{
 }
 
 .progect {
+    margin-bottom: 10px;
     background-color: #e9ebee;
-    padding: 3px 5px;
+    padding: 20px;
     border-radius: 8px;
+}
+
+.progect:nth-child(even){
+    border-left: 3px solid hsl(220, 60%, 30%);
+}
+.progect:nth-child(odd){
+    border-left: 3px solid hsl(45, 90%, 50%);
 }
 
 .progect h3:first-of-type::after {
     content: '🆕';
 }
 
+.gitHubLink {
+    text-decoration: none ;
+    color: hsl(220, 60%, 30%);
+}
+
 .gitHubLink:hover {
-    color: red;
+    color: hsl(220, 60%, 45%);
+    text-decoration: underline 2px hsl(45, 90%, 50%);
+}
+
+.gitHubLink::before {
+    content: '🐈‍⬛' ;
+    text-decoration: none ;
+}
+
+.progectHome {
+    text-decoration: none;
+    color: hsl(220, 60%, 30%);
+    text-decoration: underline 2px hsl(45, 90%, 50%);
 }
 
 section{
@@ -279,7 +322,7 @@ label {
 }
 
 .input {
-    width: 50%;
+    width: 90%;
     font-family: Helvetica,Arial,sans-serif;
     display: block;
     margin-bottom: 15px;
@@ -341,25 +384,67 @@ footer {
 text-align: center;
 }
 
-table {
-    border-collapse: collapse;
-    border: 1px solid #ece6d8;
-    width: 80%;
-    margin: 0 auto;
-    }
 
-th {
-    border: 1px solid hsl(220, 60%, 25%);
+         /* TABELLA COMPETENZE */
+         #tableCompetenze {
+ border-collapse: collapse; 
+ color: black;  
+}
+         #tableExp {
+ border-collapse: collapse; 
+ color: black;  
+}
+.captionCompetenze {
+    color: hsl(220, 30%, 40%);
+    text-align: start;
+    margin-bottom: 20px;
+}
+#tableCompetenze thead tr {
+   color:hsl(220, 30%, 40%);
+   background-color: #f4f1ec;
+    
+}
+#tableExp thead tr {
+   color:hsl(220, 30%, 40%);
+   background-color: #f4f1ec;
+    
 }
 
-/* tbody tr:nth-child(odd) {
-    background-color: hsl(60, 2%, 45%, 0.5);
-} */
+#tableCompetenze thead tr th{
+    padding: 15px;
+    border-radius: 4px;
+}
 
-caption {
-    border: 1px solid black;
-    background-color: hsl(220, 30%, 40%);
-    color: #e9ebee;
-    }
+#tableExp thead tr th{
+    padding: 15px;
+    border-radius: 4px;
+    
+}
 
-         
+
+.spanCompetenze {
+    color: hsl(220, 30%, 40%);
+    font-size: 0.8em;
+}
+
+.thCompetenze{
+  padding: 12px;         
+  text-align: left;
+  border-bottom: 1px solid #ece6d8; 
+}
+
+#tableCompetenze tbody tr:nth-child(1) th:first-child::before {
+    content: '🌐 |';
+}
+#tableCompetenze tbody tr:nth-child(2) th:first-child::before {
+    content: '🎨 |';
+}
+#tableCompetenze tbody tr:nth-child(3) th:first-child::before {
+    content: '>_ |';
+}
+#tableCompetenze tbody tr:nth-child(4) th:first-child::before {
+    content: ' 🗁 |';
+}
+#tableCompetenze tbody tr:nth-child(5) th:first-child::before {
+    content: 'ℳ |';
+}

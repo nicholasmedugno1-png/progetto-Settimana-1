@@ -73,18 +73,52 @@
              <article>
             <div>
                 <h2>Competenze</h2>
-
-                <p>
-                    Le tecnologie che vedo durante le prime settimane di corso.
-                </p>
-
-                <ul class="skillList">
-                    <li class="skillList"><span class="testoLi"><span class="titleCompetenze">HTML</span> - struttura delle pagine</span>  <div class="barHTML"></div></li>
-                    <li class="skillList"><span class="testoLi"><span class="titleCompetenze">CSS</span> - stile e impaginazione </span> <div class="barCSS"></div></li>
-                    <li class="skillList"><span class="titleCompetenze">Git e GitHub</span> - versionamento del codice <div class="barGIT"></div></li>
-                    <li class="skillList"><span class="titleCompetenze">Visual Studio Code</span> - editor di lavoro <div class="barVS"></div></li>
-                </ul>
-            </div>
+                <p>Le tecnologie su cui mi sento piu' sicuro al termine della prima settimana di corso. Le percentuali sono autovalutazioni,non certificazioni</p>
+                <table id="tableCompetenze" class="spanCompetenze"">
+                    <caption class="captionCompetenze">Stack tecnico - autovalutazione</caption>
+                    <thead class="theadCompetenze">
+                        <tr>
+                            <th>Tecnologie</th>
+                            <th>Livello</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Righa1 -->
+                        <tr>
+                            <th class="thCompetenze"> 
+                                HTML5 semantico <br>
+                                <span class="spanCompetenze">Tag stutturali, attributi, accessibilita' di base, form con validazione</span></th>
+                            <th class="thCompetenze"><div class="barHTML"></div></th>
+                        </tr>
+                        <!-- Righa2 -->
+                        <tr>
+                            <th class="thCompetenze">css</span> CSS3<br>
+                                <span class="spanCompetenze">Selettori, Pseudo-classi, box model, float, pseudo-elementi,Google Fonts</span></th>
+                            <th class="thCompetenze"><div class="barCSS"></th>
+                            
+                        </tr>
+                        <!-- Righa3 -->
+                        <tr>
+                            <th class="thCompetenze">Git e GitHub<br>
+                                <span class="spanCompetenze">init, add, commit, push, repository remoti,pubblicazione su GitHub Pages</span></th>
+                            <th class="thCompetenze"><div class="barGIT"></div></th>
+                            
+                        </tr>
+                        <tr>
+                            <th class="thCompetenze">Linea di comando<br>
+                                <span class="spanCompetenze">Navigazione tra cartelle, gestione file, comandi base di shell su macOS e Linux</span></th>
+                            <th class="thCompetenze"><div class="barVS"></div></th>
+                            
+                        </tr>
+                        <tr>
+                            <th class="thCompetenze">Markdown e documentazione<br>
+                                <span class="spanCompetenze">README , documentazione tecnica, scrittura chiara</span></th>
+                            <th class="thCompetenze"><div class="barDOC"></div></th>
+                            
+                        </tr>
+                    </tbody>
+                </table>
             <div class="returnHome">
                 <a href="index.html"><span class="material-symbols-outlined">arrow_upward</span></a>
             </div>
@@ -100,32 +134,32 @@
             </div>
             
             <div class="table">
-                <table>
-                    <caption>Esperienze formative e lavorative</caption>
-                    <thead>
+                <table id="tableExp">
+                    <caption class="captionCompetenze">Esperienze formative e lavorative</caption>
+                    <thead class="theadCompetenze">
                         <tr>
-                            <th>Anno</th>
-                            <th>Ruolo</th>
-                            <th>Azienda/Scuola</th>
+                            <th class="thCompetenze">Anno</th>
+                            <th class="thCompetenze">Ruolo</th>
+                            <th class="thCompetenze">Azienda/Scuola</th>
                         </tr>
                     </thead>
                     <tbody>
                         <!-- Righa1 -->
                         <tr>
-                            <th>2026</th>
-                            <th>Studente Full Stack Epicode</th>
+                            <th class="thCompetenze">2026</th>
+                            <th class="thCompetenze">Studente Full Stack Epicode</th>
                         </tr>
                         <!-- Righa2 -->
                         <tr>
-                            <th>2024-2025</th>
-                            <th>libraio</th>
-                            <th>Libreria Centrale, Milano</th>
+                            <th class="thCompetenze">2024-2025</th>
+                            <th class="thCompetenze">libraio</th>
+                            <th class="thCompetenze">Libreria Centrale, Milano</th>
                         </tr>
                         <!-- Righa3 -->
                         <tr>
-                            <th>2018-2022</th>
-                            <th>Studente di Lettere</th>
-                            <th>Universita' degli Studi di Milano</th>
+                            <th class="thCompetenze">2018-2022</th>
+                            <th class="thCompetenze">Studente di Lettere</th>
+                            <th class="thCompetenze">Universita' degli Studi di Milano</th>
                         </tr>
                     </tbody>
                 </table>
@@ -157,21 +191,35 @@
                     <!-- IL TARGET="_BLANK" PER APRIRE IL LINK IN UNA NUOVA PAGINA QUANDO INSERIREMO I LINK -->
                     <a class="gitHubLink" target="_blank" href="javascript:void(0)">vedi su GitHub</a>
                 </div>
-                <div>
+                <div class="progect">
                     <h3>Card di presentazione</h3>
                     <p>
                         Un biglietto digitale con nome, ruolo e link ai social. Esercizio di sintassi sulla strutura
                         HTML.
                     </p>
-                    
-                    
-                    <div>
+                     <div>
                         <a class="gitHubLink" target="_blank" href="javascript:void(0)">vedi su GitHub</a>
                         
-                            <a class="progectHome" href="progect.html">Tutti i miei Progeti</a>
+                            
                         
                     </div>
                 </div>
+                <div class="progect">
+                    <h3>Portfolio personale</h3>
+                    <p>Questa pagina. Costruita da zero in cinque giorni, dal markuo HTML alla stilizzazione CSS, fino alla pubblicazione si gitHub Pages
+                        </p>
+                     <div>
+                        <a class="gitHubLink" target="_blank" href="javascript:void(0)">vedi su GitHub</a>
+                        
+                        
+                    </div>
+                </div>
+                
+                    <a class="progectHome" href="progect.html">Tutti i miei Progeti</a>
+                
+
+                    
+                   
                         
                 <br>
                 <div class="returnHome">
@@ -249,9 +297,7 @@
     <!-- Campo non fondamentale ai fini della pagina -->
     <aside>
         <div>
-            <p>
-                Sono presenti su questa piattaforme professionali,dove puoi seguire i miei progetti e contattarmi
-            </p>
+            
 
             <p>
                 Profilo GitHub:
