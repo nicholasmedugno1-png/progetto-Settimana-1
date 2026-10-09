@@ -157,9 +157,9 @@ font-family:  'Playfair Display', Georgia, serif;
 }
 
 h1::first-letter,
-h2::first-letter,
+.primaLettera,
 h3::first-letter {
-    font-family:'Playfair Display', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
 }
 
 /* .noFloat {
@@ -294,14 +294,17 @@ label {
     font-family: 'Helvetica,Arial,sans-serif';
     color: #1f3d7a;
     font-weight: bold;
-    
+}
+
+.marginLabel {
+    margin-top: 18px;
 }
 
 .input {
     width: 90%;
     font-family: Helvetica,Arial,sans-serif;
     display: block;
-    margin-bottom: 15px;
+    
     border: 1px solid #d6cfbf;
     border-radius: 4px;
 }
@@ -317,6 +320,11 @@ textarea:hover {
 input:focus,
 textarea:focus,
 select:focus {
+    background-color: #fbf8f1;
+    border: hsl(220, 60%, 30%)
+}
+
+#SceltaMultipla:focus {
     background-color: #fbf8f1;
     border: hsl(220, 60%, 30%)
 }
