@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 *,
 *::after,
 *::before{
@@ -48,7 +48,7 @@ aside{
     }
     
  nav {
-    margin-top: 50px;
+    margin-top: 42px;
  }  
 
  .titoloHeader {
@@ -77,14 +77,17 @@ aside{
 }
 
 .topBar ul li {
-    
     color: #e9ebee;
     display: inline-block;
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 2px 1px;
     border-radius: 5px;
+    padding-bottom: 5px;
 }
-
+    
+.topBar ul li:hover {
+    background-color:  hsl(45, 90%, 60%);
+}
 .topBar ul li:nth-child(1)::before{
     content: '👤';
 }
@@ -181,9 +184,7 @@ aside{
     padding: 2px 6px;
     
 }
-.topBar ul li:hover {
-    background-color:  hsl(45, 90%, 60%);
-}
+
 
 
 .imgPersonale {
@@ -299,6 +300,10 @@ h2::before{
     text-decoration: underline 2px hsl(45, 90%, 50%);
 }
 
+.progectHome:hover {
+    color: hsl(220, 60%, 45%);
+}
+
 section{
     border: 0.3px #e6e0d3;
     margin-top: -300;
@@ -326,42 +331,39 @@ label {
     font-family: Helvetica,Arial,sans-serif;
     display: block;
     margin-bottom: 15px;
+    border: 1px solid #d6cfbf
 }
+
+
 
 input:hover,
 textarea:hover {
-    background-color: black;
+    
     color: #ffffff;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-    background-color: black;
-    color: #ffffff;
+    background-color: #fbf8f1;
+    border: hsl(220, 60%, 30%)
 }
-
-input:placeholder-shown,
-textarea:placeholder-shown {
-    font-family: Helvetica,Arial,sans-serif;
-}
-
 
 
 .btnInvia {
     color: aliceblue;
-    background-color: #1f3d7a;
+    background-color: hsl(220, 60%, 30%);
     width: 30%;
     padding: 12px 24px;
     border: none;
     margin-top: 15px;
     border-radius: 4px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) ;
+    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.1) ;
     transition: 0.2s;
 }
 
 .btnInvia:hover {
-    background-color: #194eb6;
+    background-color:  hsl(220, 60%, 45%);
     padding: 12px 24px;
     box-shadow: 3px 3px 8px  rgb(36, 36, 36) ;
 }
@@ -369,15 +371,37 @@ textarea:placeholder-shown {
 .btnInvia:active{
     size: 1em;
     box-shadow: 1px 1px 2px rgb(36, 36, 36) ;
-    background-color: #1f3d7a;
+    background-color: hsl(220, 60%, 30%);
 }
 
 footer {
     width: 100%;
-    background-color: black;
+    background-color: hsl(220, 40%, 15%);
     color: #ffffff;
     text-align: center;
     padding: 3px;
+    height: 100px;
+}
+
+/* footer a{
+    margin-top: 5px;
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.08); 
+} */
+
+footer a i:hover {
+    color: hsl(220, 60%, 20%);
+    background-color: hsl(45, 90%, 60%);
+    border: 5px solid hsl(45, 90%, 60%);
+    border-radius: 50%;
+}
+
+footer a i{
+    border: 5px solid rgba(255, 255, 255, 0.08);;
+    border-radius: 50%;
+    margin: 10px;
+    color:  white;
+    
 }
 
 .esperienze:nth-of-type(table) {
