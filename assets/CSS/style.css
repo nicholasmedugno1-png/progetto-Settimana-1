@@ -307,14 +307,6 @@ label {
     border-radius: 4px;
 }
 
-
-
-input:hover,
-textarea:hover {
-
-    color: #ffffff;
-}
-
 input:focus,
 textarea:focus,
 select:focus {
