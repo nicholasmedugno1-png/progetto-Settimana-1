@@ -100,11 +100,11 @@ nav {
     margin-right: 3px;
 }
 
-.topBar ul li a {
+.topBar ul li a { 
     color: #e9ebee;
     font-weight: bold;
     text-decoration: none;
-    padding: 5.5px;
+    padding: 5.5px; 
 }
 
 .topBar ul li a:hover {
