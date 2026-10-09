@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 *,
 *::after,
-*::before{
+*::before {
     box-sizing: border-box;
-    }
+}
 
 html,
 body {
-    font-family:  'Inter', Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f1ec;
@@ -26,13 +27,14 @@ main {
     margin-top: -35px;
     position: relative;
 }
-aside{
+
+aside {
     max-width: 920px;
     margin: 0 auto;
 }
 
 
-    
+
 
 
 .topBar {
@@ -45,68 +47,54 @@ aside{
     text-align: center;
     border-bottom: 3px solid hsl(45, 90%, 60%);
     position: relative;
-    }
-    
- nav {
-    margin-top: 42px;
- }  
+}
 
- .titoloHeader {
+nav {
+    margin-top: 42px;
+}
+
+.titoloHeader {
     display: block;
     padding-top: 50px;
- }
+}
 
- .titoloHeader h1 ,
- .titoloHeader p {
+.titoloHeader h1,
+.titoloHeader p {
     text-align: center;
- }
+}
 
 
 .topBar h1 {
     color: #ffffff;
     padding: 0;
     margin: 0;
-    
+
     text-shadow: 2 3px 4px 0 3px 10px rgba(0, 0, 0, 0.4);
 }
 
-.topBar p{
+.topBar p {
 
     color: #f0e7c8;
     font-style: italic;
 }
 
 .topBar ul li {
-     color: #e9ebee; 
+    color: #e9ebee;
     display: inline-block;
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 6px;
     border-radius: 5px;
     padding-bottom: 8px;
 }
-    
+
 .topBar ul li:hover {
-    border:  hsl(45, 90%, 60%);
-    background-color:  hsl(45, 90%, 60%);
-    padding-bottom: 9px;
-    
-
-}
-
- .barEsterna{
-    width: 200px;
-    background-color: #f4f1ec;
-    height: 12px;
-    margin-top: 10px;
-    border-radius: 6px;
-    
-} 
-
-.barDOC {
+    border: hsl(45, 90%, 60%);
     background-color: hsl(45, 90%, 60%);
-    height: 100%;
-    border-radius: 6px;
+    padding-bottom: 9px;
+
 }
+
+
 
 .topBar ul li:not(:last-child) {
     margin-right: 3px;
@@ -116,6 +104,7 @@ aside{
     color: #e9ebee;
     font-weight: bold;
     text-decoration: none;
+    padding: 5.5px;
 }
 
 .topBar ul li a:hover {
@@ -127,7 +116,7 @@ aside{
 
 .imgPersonale {
     background-image: url(../media/img/pexels-kampus-8353812.jpg);
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     width: 130px;
     height: 130px;
@@ -142,14 +131,14 @@ aside{
     font-weight: bold;
     margin-right: 6px;
     color: hsl(220, 60%, 30%);
-    font-family:  'Playfair Display', Georgia, serif ;
+    font-family: 'Playfair Display', Georgia, serif;
 
 }
 
 h1::first-letter,
- h2::first-letter ,
-  h3::first-letter {
-font-family:  'Playfair Display', Georgia, serif;
+h2::first-letter,
+h3::first-letter {
+    font-family: 'Playfair Display', Georgia, serif;
 }
 
 h1::first-letter,
@@ -164,32 +153,25 @@ h3::first-letter {
 
 .titleCompetenze {
     color: hsl(220, 30%, 25%);
-    font-weight:bold ;
+    font-weight: bold;
 }
-
-#competenze ul li::before {
-            content: '⇨';
-            margin-right: 5px ;
-        } 
-         #competenze ul li {
-            list-style: none;
-         } 
 
 
 h2 {
     color: hsl(220, 60%, 25%);
 }
 
-h2::before{
+h2::before {
     content: '\2756';
     color: hsl(45, 90%, 50%);
     margin-right: 3px;
-} 
+}
 
 .returnHome {
     margin-top: 20px;
     text-align: center;
 }
+
 .returnSu {
     margin-top: 20px;
     text-align: center;
@@ -198,6 +180,7 @@ h2::before{
 .returnHome i {
     color: #2b2b2b;
 }
+
 .returnSu i {
     color: #2b2b2b;
 }
@@ -210,6 +193,7 @@ h2::before{
     border-radius: 50%;
     transition: 0.1s;
 }
+
 .returnSu i:hover {
     padding: 0px 2px;
     color: hsl(220, 60%, 20%);
@@ -231,6 +215,7 @@ h2::before{
 .skillList:nth-child(even) {
     background-color: #e9ebee;
 }
+
 .skillList:nth-child(odd) {
     background-color: #ffffff;
 }
@@ -242,10 +227,11 @@ h2::before{
     border-radius: 8px;
 }
 
-.progect:nth-child(even){
+.progect:nth-child(even) {
     border-left: 3px solid hsl(220, 60%, 30%);
 }
-.progect:nth-child(odd){
+
+.progect:nth-child(odd) {
     border-left: 3px solid hsl(45, 90%, 50%);
 }
 
@@ -254,7 +240,7 @@ h2::before{
 }
 
 .gitHubLink {
-    text-decoration: none ;
+    text-decoration: none;
     color: hsl(220, 60%, 30%);
 }
 
@@ -287,7 +273,7 @@ h2::before{
 }
 
 
-section{
+section {
     border: 0.3px #e6e0d3;
     margin-top: 30px;
     margin-bottom: 25px;
@@ -314,9 +300,9 @@ label {
 
 .input {
     width: 90%;
-    font-family: Helvetica,Arial,sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     display: block;
-    
+
     border: 1px solid #d6cfbf;
     border-radius: 4px;
 }
@@ -325,7 +311,7 @@ label {
 
 input:hover,
 textarea:hover {
-    
+
     color: #ffffff;
 }
 
@@ -350,19 +336,19 @@ select:focus {
     border: none;
     margin-top: 15px;
     border-radius: 4px;
-    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.1) ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: 0.2s;
 }
 
 .btnInvia:hover {
-    background-color:  hsl(220, 60%, 45%);
+    background-color: hsl(220, 60%, 45%);
     padding: 12px 24px;
-    box-shadow: 3px 3px 8px  rgb(36, 36, 36) ;
+    box-shadow: 3px 3px 8px rgb(36, 36, 36);
 }
 
-.btnInvia:active{
+.btnInvia:active {
     size: 1em;
-    box-shadow: 1px 1px 2px rgb(36, 36, 36) ;
+    box-shadow: 1px 1px 2px rgb(36, 36, 36);
     background-color: hsl(220, 60%, 30%);
 }
 
@@ -388,12 +374,13 @@ footer a i:hover {
     border-radius: 50%;
 }
 
-footer a i{
-    border: 5px solid rgba(255, 255, 255, 0.08);;
+footer a i {
+    border: 5px solid rgba(255, 255, 255, 0.08);
+    ;
     border-radius: 50%;
     margin: 10px;
-    color:  white;
-    
+    color: white;
+
 }
 
 footer p {
@@ -401,76 +388,83 @@ footer p {
 }
 
 .esperienze:nth-of-type(table) {
-text-align: center;
+    text-align: center;
 }
 
 .CenterForm {
-        display: table;
-        margin: 0 auto;
-        width: 90%;
-       }
-
-         /* TABELLA COMPETENZE */
-       .TableCenter, .table {
-        display: table;
-        margin: 0 auto;
-       } 
-
-       
-
-        
-         #tableCompetenze {
- border-collapse: collapse; 
- color: black;  
+    display: table;
+    margin: 0 auto;
+    width: 90%;
 }
-         #tableExp {
- border-collapse: collapse; 
- color: black;  
+
+/* TABELLA COMPETENZE */
+.TableCenter,
+.table {
+    display: table;
+    margin: 0 auto;
 }
+
+
+
+
+#tableCompetenze {
+    border-collapse: collapse;
+    color: black;
+}
+
+#tableExp {
+    border-collapse: collapse;
+    color: black;
+}
+
 .captionCompetenze {
     color: hsl(220, 30%, 40%);
     text-align: start;
-   
+
 }
 
 .theadCompetenze {
     border-radius: 50px;
     margin-top: 15px;
 }
-#tableCompetenze thead tr th{
-    padding: 15px;
-   
-}
-#tableCompetenze thead tr {
-   color:hsl(220, 30%, 40%);
-   }
 
-   #tableCompetenze thead tr th:first-child{
+#tableCompetenze thead tr th {
+    padding: 15px;
+
+}
+
+#tableCompetenze thead tr {
+    color: hsl(220, 30%, 40%);
+}
+
+#tableCompetenze thead tr th:first-child {
     background-color: #f4f1ec;
-    border-radius: 5px 0px 0px 0px ;
-    }
+    border-radius: 5px 0px 0px 0px;
+}
 
 #tableExp thead tr {
-   color:hsl(220, 30%, 40%);
-    }
+    color: hsl(220, 30%, 40%);
+}
 
-#tableExp thead tr th{
+#tableExp thead tr th {
     padding: 15px;
     background-color: #f4f1ec;
-    }
-#tableExp thead tr th:first-child{
-    background-color: #f4f1ec;
-    border-radius: 5px 0px 0px 0px ;
-    }
+}
 
-    #tableExp thead tr th:nth-of-type(3){
-        background-color: #f4f1ec;
-        border-radius: 0px 5px 0px 0px;
-    }
-    #tableCompetenze thead tr th:nth-of-type(2){
-        background-color: #f4f1ec;
-        border-radius: 0px 5px 0px 0px;
-    }
+#tableExp thead tr th:first-child {
+    background-color: #f4f1ec;
+    border-radius: 5px 0px 0px 0px;
+}
+
+#tableExp thead tr th:nth-of-type(3) {
+    background-color: #f4f1ec;
+    border-radius: 0px 5px 0px 0px;
+}
+
+#tableCompetenze thead tr th:nth-of-type(2) {
+    background-color: #f4f1ec;
+    border-radius: 0px 5px 0px 0px;
+}
 
 
 .spanCompetenze {
@@ -478,24 +472,44 @@ text-align: center;
     font-size: 0.8em;
 }
 
-.thCompetenze{
-  padding: 12px;         
-  text-align: left;
-  border-bottom: 1px solid #ece6d8; 
+.thCompetenze {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ece6d8;
 }
 
 #tableCompetenze tbody tr:nth-child(1) th:first-child::before {
     content: '🌐 |';
 }
+
 #tableCompetenze tbody tr:nth-child(2) th:first-child::before {
     content: '🎨 |';
 }
+
 #tableCompetenze tbody tr:nth-child(3) th:first-child::before {
     content: '>_ |';
 }
+
 #tableCompetenze tbody tr:nth-child(4) th:first-child::before {
     content: ' 🗁 |';
 }
+
 #tableCompetenze tbody tr:nth-child(5) th:first-child::before {
     content: 'ℳ |';
+}
+
+/* BARRE PERCENTUALI */
+.barEsterna {
+    width: 200px;
+    background-color: #f4f1ec;
+    height: 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+
+}
+
+.barDOC {
+    background-color: hsl(45, 90%, 60%);
+    height: 100%;
+    border-radius: 6px;
 }
