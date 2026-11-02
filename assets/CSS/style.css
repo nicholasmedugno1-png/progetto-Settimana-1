@@ -103,10 +103,6 @@ section {
     padding: 15px;
 }
 
-article {
-    margin-left: 10px;
-}
-
 .imgPersonale {
     background-image: url(../media/img/pexels-kampus-8353812.jpg);
     background-size: cover;
@@ -299,7 +295,7 @@ footer p {
 
 .TableCenter,
 .table {
-    
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -369,6 +365,7 @@ footer p {
 }
 
 .thCompetenze {
+    width: 40%;
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ece6d8;
@@ -397,7 +394,7 @@ footer p {
         BARRE  
 ---------------------- */
 .barEsterna {
-    width: 200px;
+    width: 70%;
     background-color: #f4f1ec;
     height: 12px;
     margin-top: 10px;
@@ -419,6 +416,9 @@ footer p {
         float: left;
         margin-right: 15px;
     }
+    .noFloat {
+    float: none;
+}
 
     nav {
         font-size: 0.8em ;
@@ -426,6 +426,9 @@ footer p {
         margin-right: 30px;
     }
 
+.thCompetenze {
+    padding: 12px;
+}
 
 
     .input {
@@ -446,6 +449,12 @@ footer p {
     margin: 0 auto;
     width: 100%;
   }
+
+  .barEsterna {
+    width: 80%;
+  }
+
+
 
   nav {
     font-size: 1.2em;
@@ -502,4 +511,10 @@ footer p {
  .topBar ul li a:hover {
     color: #2b2b2b;
 } 
+
+  .noFloat {
+    float: none;
+}
+
+
 }
