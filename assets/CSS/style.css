@@ -37,9 +37,9 @@ main {
 
 nav {
   text-align: center;
-    font-size: 0.5em;
-    margin: 47px auto;
-    margin-right: 23px;
+    font-size: 0.7em;
+    margin: 0px auto;
+    margin-right: 35px;
     }
 
 .titoloHeader {
@@ -412,14 +412,18 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
+    main {
+        max-width: 80%;
+    }
     .imgPersonale {
         float: left;
         margin-right: 15px;
     }
 
     nav {
-        font-size:1em ;
+        font-size: 0.8em ;
         margin: 40px auto;
+        margin-right: 30px;
     }
 
 
@@ -454,7 +458,7 @@ footer p {
     background-color: hsl(45, 90%, 60%);
     border: 9px solid hsl(45, 90%, 60%);
     border-radius: 50%;
-    transition: 0.1s;
+    transition: 0.2s;
 } 
 
  .returnSu i:hover {
@@ -463,7 +467,7 @@ footer p {
     background-color: hsl(45, 90%, 60%);
     border: 9px solid hsl(45, 90%, 60%);
     border-radius: 50%;
-    transition: 0.1s;
+    transition: 0.2s;
 } 
 
 .btnInvia:hover {
