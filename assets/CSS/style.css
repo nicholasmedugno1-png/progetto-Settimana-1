@@ -24,7 +24,7 @@ main {
 }
 
 .topBar {
-    height: 230px;
+    height: 240px;
     width: 100%;
     background-image: linear-gradient(rgba(110, 110, 110, 0.5), rgba(114, 113, 113, 0.5)), url(../media/img/header-bg.jpg);
     background-repeat: no-repeat;
@@ -422,7 +422,7 @@ footer p {
 
     nav {
         font-size: 0.8em ;
-        margin: 40px auto;
+        margin: 50px auto;
         margin-right: 30px;
     }
 
@@ -458,7 +458,7 @@ footer p {
 
   nav {
     font-size: 1.2em;
-    margin: 38px auto;
+    margin: 45px auto;
   }
 
  .returnHome i:hover {
