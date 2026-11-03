@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
 
 *,
 *::after,
@@ -19,8 +20,12 @@ body {
 main {
     max-width: 90%;
     margin: 0 auto;
-    margin-top: -35px;
-    position: relative;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 3000;
 }
 
 .topBar {
@@ -32,7 +37,7 @@ main {
     background-position: center;
     text-align: center;
     border-bottom: 3px solid hsl(45, 90%, 60%);
-    position: relative;
+    
 }
 
 nav {
@@ -115,10 +120,6 @@ section {
     margin: 0 auto;
 }
 
-#chi-sono {
-    margin-top: -35px;
-}
-
 .containerChiSono p:first-of-type::first-letter {
     font-size: 2rem;
     font-weight: bold;
@@ -160,8 +161,17 @@ h2::before {
 }
 
 .returnSu {
-    margin-top: 20px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 3000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: #1f3d7a;
     text-align: center;
+    margin-bottom: 5px;
 }
 
 .returnHome i {
@@ -169,13 +179,14 @@ h2::before {
 }
 
 .returnSu i {
-    color: #2b2b2b;
+    color: #cec9c9;
 }
 
 /* -------------------------------
         SEZIONE PROGETTI
 ------------------------------- */
 .progect {
+    position: relative;
     margin-top: 10px;
     background-color: #e9ebee;
     padding: 20px;
@@ -191,7 +202,15 @@ h2::before {
 }
 
 .progectRicetta::after {
-    content: '🆕';
+    content: 'new';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: hsl(220, 60%, 30%);
+    border-radius: 0px 8px 0px 8px;
+    font-family:"Bungee Tint", sans-serif;
+    font-weight: 400;
+    padding: 4px 8px;
 }
 
 .gitHubLink {
@@ -266,22 +285,49 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 3px;
-    height: 100px;
+    height: 130px;
+    position: relative;
+}
+
+footer div {
+    display: inline;
+    font-size: 0.8em;
+    text-align: start;
+    margin-left: 15px;
+    color: #cec9c9;
+}
+
+#userDati p {
+    font-size: 1em;
+}
+
+#infoUtente {
+    display: inline-block;
+    text-align: start;
+    position: absolute;
+    left: 0;
 }
 
 
 
 footer a i {
     border: 5px solid rgba(255, 255, 255, 0.08);
-    ;
     border-radius: 50%;
     margin: 10px;
     color: white;
 
 }
 
+.footerInLine {
+    display: inline-block;
+    padding-bottom: 20px;
+    text-align: center;
+    
+}
+
 footer p {
     font-size: 0.7em;
+    margin-bottom: 10px;
 }
 
 
@@ -408,16 +454,64 @@ footer p {
     border-radius: 6px;
 }
 
+.overlay {
+	display: none;
+	position: fixed;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 5000;
+}
+
+.modal {
+	position: absolute;
+    
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 25px;
+	border-radius: 10px;
+	max-width: 480px;
+}
+
+#btnCloseModal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    margin-top: 8px;
+    margin-right: 3px;
+    cursor: pointer;
+    
+}
+
+
 @media screen and (min-width: 768px) {
     main {
         max-width: 80%;
     }
-    .imgPersonale {
-        float: left;
-        margin-right: 15px;
+
+    #chi-sono {
+        position: relative;
+        top: 0;
+        height: 280px;
     }
-    .noFloat {
-    float: none;
+
+    
+ 
+.imgPersonale {
+    position: absolute;
+    left: 30px;
+}
+
+
+.paragrafoChiSono {
+    position: absolute;
+    top: 0;
+    top: 60px;
+    left: 180px;
+
 }
 
     nav {
@@ -441,20 +535,14 @@ footer p {
 }
 
 @media screen and (min-width: 1200px) {
-    main{
-        max-width: 80%;
+    label {
+        font-size: 0.7em;
     }
-  
+
     table{
     margin: 0 auto;
     width: 100%;
   }
-
-  .barEsterna {
-    width: 80%;
-  }
-
-
 
   nav {
     font-size: 1.2em;
@@ -470,14 +558,17 @@ footer p {
     transition: 0.2s;
 } 
 
- .returnSu i:hover {
-    padding: 0px 2px;
+ .returnSu:hover {
     color: hsl(220, 60%, 20%);
     background-color: hsl(45, 90%, 60%);
-    border: 9px solid hsl(45, 90%, 60%);
+    /* border: 2px solid hsl(220, 60%, 20%); */
     border-radius: 50%;
     transition: 0.2s;
 } 
+
+ .returnSu i:hover {
+    color: #1f3d7a;
+ }
 
 .btnInvia:hover {
     cursor: pointer;
@@ -492,7 +583,7 @@ footer p {
     background-color: hsl(220, 60%, 30%);
 } 
  footer a i:hover {
-    color: hsl(220, 60%, 20%);
+    color: #142952;
     background-color: hsl(45, 90%, 60%);
     border: 5px solid hsl(45, 90%, 60%);
     border-radius: 50%;
@@ -511,10 +602,5 @@ footer p {
  .topBar ul li a:hover {
     color: #2b2b2b;
 } 
-
-  .noFloat {
-    float: none;
-}
-
 
 }

@@ -42,25 +42,29 @@
 
 
                     <div class="imgPersonale"></div>
-                    <p>
-                        Mi chiamo Mario rossi e sto imparando a programmare.
-                        Studio sviluppo web con <b>Epicode</b> e ogni giorno aggiungo qualcosa di nuovo a questa
-                        pagina.
-                        Mi piace lavorare in gruppo, leggere documentazione tecnica e capire come funzionano le
-                        cose.
-                    </p>
+                    <div class="paragrafoChiSono">
+
+                        <p>
+                            Mi chiamo Mario rossi e sto imparando a programmare.
+                            Studio sviluppo web con <b>Epicode</b> e ogni giorno aggiungo qualcosa di nuovo a questa
+                            pagina.
+                            Mi piace lavorare in gruppo, leggere documentazione tecnica e capire come funzionano le
+                            cose.
+                        </p>
 
 
 
-                    <p class="noFloat">vivo a Milano. Ho una formazione precedente in <i>lettere</i> e ora sto cambiando
-                        settore.Cerco un primo ruolo come sviluppatore frontend</p>
+                        <p class="noFloat">vivo a Milano. Ho una formazione precedente in <i>lettere</i> e ora sto
+                            cambiando
+                            settore.Cerco un primo ruolo come sviluppatore frontend</p>
+                    </div>
 
                 </div>
 
 
-                <div class="returnSu">
+                <!-- <div class="returnSu">
                     <a href="index.html"><i class="fa-solid fa-arrow-up-long"></i></a>
-                </div>
+                </div> -->
             </article>
         </section>
 
@@ -95,9 +99,9 @@
                                             con validazione</span>
                                     </th>
                                     <th class="thCompetenze">
-                                        <div class="barEsterna">
+                                        <!-- <div class="barEsterna">
                                             <div class="barDOC" style="width: 80%;"></div>
-                                        </div>
+                                        </div> -->
                                     </th>
                                 </tr>
                                 <!-- Righa2 -->
@@ -107,9 +111,9 @@
                                             pseudo-elementi,Google Fonts</span>
                                     </th>
                                     <th class="thCompetenze">
-                                        <div class="barEsterna">
+                                        <!-- <div class="barEsterna">
                                             <div class="barDOC" style="width: 85%;"></div>
-                                        </div>
+                                        </div> -->
                                     </th>
 
                                 </tr>
@@ -120,9 +124,9 @@
                                             remoti,pubblicazione su GitHub Pages</span>
                                     </th>
                                     <th class="thCompetenze">
-                                        <div class="barEsterna">
+                                        <!-- <div class="barEsterna">
                                             <div class="barDOC" style="width: 60%;"></div>
-                                        </div>
+                                        </div> -->
                                     </th>
 
                                 </tr>
@@ -133,9 +137,9 @@
                                             di shell su macOS e Linux</span>
                                     </th>
                                     <th class="thCompetenze">
-                                        <div class="barEsterna">
+                                        <!-- <div class="barEsterna">
                                             <div class="barDOC" style="width: 75%;"></div>
-                                        </div>
+                                        </div> -->
                                     </th>
 
                                 </tr>
@@ -145,18 +149,18 @@
                                             chiara</span>
                                     </th>
                                     <th class="thCompetenze">
-                                        <div class="barEsterna">
+                                        <!-- <div class="barEsterna">
                                             <div class="barDOC" style="width: 85%;"></div>
-                                        </div>
+                                        </div> -->
                                     </th>
-                                    </tr>
+                                </tr>
 
                             </tbody>
                         </table>
                     </div>
-                    <div class="returnSu">
+                    <!-- <div class="returnSu">
                         <a href="index.html"><i class="fa-solid fa-arrow-up-long"></i></a>
-                    </div>
+                    </div> -->
             </article>
         </section>
 
@@ -201,10 +205,10 @@
                     </table>
                 </div>
                 <br>
-                <div class="returnSu">
+                <!-- <div class="returnSu">
                     <a href="index.html"><i class="fa-solid fa-arrow-up-long"></i></a>
 
-                </div>
+                </div> -->
                 </articlea>
         </section>
 
@@ -262,10 +266,10 @@
 
 
 
-                    <br>
-                    <div class="returnSu">
+
+                    <!-- <div class="returnSu">
                         <a href="index.html"><i class="fa-solid fa-arrow-up-long"></i></a>
-                    </div>
+                    </div> -->
 
                 </div>
             </article>
@@ -278,12 +282,20 @@
                 <div>
                     <h2><span class="primaLettera">C</span>ontattami</h2>
                 </div>
+                <p>Clicca il bottone per aprire il form</p>
+                <button id="btnOpenModal" class="btnInvia">copila il form</button>
 
-                <form action="prova.html" method="get">
+                <div class="overlay">
 
-                    <p>Compila il form per scrivermi. Ti contatto entro 24 ore</p>
-                    <div class="CenterForm">
-                        
+                    <div class="modal">
+
+                        <button id="btnCloseModal">❌</button>
+
+                        <form action="" method="get">
+
+                            <p>Compila il form per scrivermi. Ti contatto entro 24 ore</p>
+                            <div class="CenterForm">
+
 
                                 <div class="marginLabel">
                                     <label for="nameUser">Nome</label>
@@ -324,33 +336,47 @@
 
                                 <div class="marginLabel">
                                     <input class="condizioni" id="Condizioni" type="checkbox" required>
-                                    <label class="condizioni" for="Condizioni">Accetto di essere ricontattato all'indirizzo
+                                    <label class="condizioni" for="Condizioni">Accetto di essere ricontattato
+                                        all'indirizzo
                                         indicato</label>
                                 </div>
 
-                                <button class="btnInvia" type="submit">Invia</button>
-                        
-                    </div>
-                </form>
+                                <button id="btnInvia" class="btnInvia" type="submit">Invia</button>
 
-                <div class="returnSu">
-                    <a href="index.html"><i class="fa-solid fa-arrow-up-long"></i></a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </article>
         </section>
-
+        <div class="returnSu">
+            <a href="index.html"><i class="fa-solid fa-arrow-up-long"></i></a>
+        </div>
     </main>
 
 
 
     <footer>
-        <a href="javascript:void(0)"><i class="fa-brands fa-github"></i></a>
-        <a href="javascript:void(0)"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="javascript:void(0)"><i class="fa-solid fa-envelope"></i></i></a>
-        <a href="javascript:void(0)"><i class="fa-solid fa-globe"></i></i></a>
-        <p>© 2026 Mario Rossi - Costruito a mano durante la prima settimana del corso Epicode</p>
+        <div id="infoUtente">
+            <div id="userDati">
+                <h2>I tuoi dati</h2>
+                <p id="nameRes"></p>
+                <p id="emailRes"></p>
+                <p id="dateRes"></p>
+            </div>
+            
+        </div>
+            
+        <div class="footerInLine">
+            <a href="javascript:void(0)"><i class="fa-brands fa-github"></i></a>
+            <a href="javascript:void(0)"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="javascript:void(0)"><i class="fa-solid fa-envelope"></i></i></a>
+            <a href="javascript:void(0)"><i class="fa-solid fa-globe"></i></i></a>
+            <p>© 2026 Mario Rossi - Costruito a mano durante la prima settimana del corso Epicode</p>
+        </div>
     </footer>
 
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
