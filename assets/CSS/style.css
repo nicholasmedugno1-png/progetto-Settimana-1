@@ -283,13 +283,13 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 3px;
-    height: 130px;
-    position: relative;
+    height: 175px;
+    padding: 5px;
 }
+
 
 footer div {
     font-size: 0.8em;
-    text-align: start;
     margin-left: 15px;
     color: #cec9c9;
 }
@@ -297,15 +297,6 @@ footer div {
 #userDati p {
     font-size: 1em;
 }
-
-#infoUtente {
-    /* display: inline-block; */
-    
-    text-align: start;
-    position: absolute;
-    left: 0;
-}
-
 
 
 footer a i {
@@ -316,12 +307,7 @@ footer a i {
 
 }
 
-.footerInLine {
-    display: inline-block;
-    padding-bottom: 20px;
-    text-align: center;
-    
-}
+
 
 footer p {
     font-size: 0.7em;
@@ -339,7 +325,7 @@ footer p {
 
 .TableCenter,
 .table {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -496,7 +482,22 @@ footer p {
         height: 280px;
     }
 
+
+   footer {
+    position: relative;
+    height: 150px;
+   } 
+
+   #infoUtente {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+   }
     
+   .footerInLine {
+    display: inline-block;
+   }
  
 .imgPersonale {
     position: absolute;
